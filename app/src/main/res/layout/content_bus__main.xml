@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityClasses.Bus_MainActivity"
+    tools:showIn="@layout/activity_bus__main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="24dp"
+        android:id="@+id/initialPage"
+        android:paddingRight="24dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Number : "
+        android:textSize="16sp"
+        android:id="@+id/journeyBusNumber1"
+        app:fontFamily="@font/aref_ruqaa" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engine Number : "
+        android:textSize="16sp"
+        android:id="@+id/journeyEngineNumber1"
+        app:fontFamily="@font/aref_ruqaa" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chassis Number : "
+        android:textSize="16sp"
+        android:id="@+id/journeyChassisNumber1"
+        app:fontFamily="@font/aref_ruqaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Journey Details"
+            android:textSize="26sp"
+            android:layout_gravity="center_horizontal"
+            app:fontFamily="@font/aref_ruqaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local Bus Number : "
+            android:id="@+id/local_Bus"
+            android:textSize="20sp"
+            app:fontFamily="@font/aref_ruqaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From : "
+            android:id="@+id/fromJourney1"
+            android:textSize="20sp"
+            app:fontFamily="@font/aref_ruqaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To : "
+            android:id="@+id/toJourney1"
+            android:textSize="20sp"
+            app:fontFamily="@font/aref_ruqaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Name : "
+            android:id="@+id/driverName1"
+            android:textSize="20sp"
+            app:fontFamily="@font/aref_ruqaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conductor Name : "
+            android:id="@+id/conductorName1"
+            android:textSize="20sp"
+            app:fontFamily="@font/aref_ruqaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route Details"
+            android:textSize="26sp"
+            android:layout_gravity="center_horizontal"
+            app:fontFamily="@font/aref_ruqaa" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Stop : "
+            android:id="@+id/current"
+            android:textSize="20sp"
+            app:fontFamily="@font/aref_ruqaa"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Stop : "
+            android:id="@+id/next"
+            android:textSize="20sp"
+            app:fontFamily="@font/aref_ruqaa"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click here to get details"
+            android:onClick="getDetails"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/secondPage">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click here to hide details"
+            android:onClick="getDetails"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

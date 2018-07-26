@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityClasses.UserActivity"
+    tools:showIn="@layout/app_bar_user"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginRight="14dp"
+        android:id="@+id/userCurrent"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:visibility="gone"
+        android:theme="@style/hello"
+        android:id="@+id/fromBusStop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/search_back"
+        android:visibility="gone"
+        android:id="@+id/searchLayout"
+        android:layout_marginRight="14dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/search"
+            android:id="@+id/searchIcon"/>
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/search"
+            android:layout_weight="1"
+            android:hint="Add your destination"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:onClick="clearText"
+            android:id="@+id/clearButton"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            android:src="@drawable/clear"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/recyclerViewBuses"/>
+
+</LinearLayout>

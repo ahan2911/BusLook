@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "522965925940",
+    "firebase_url": "https://buslook-5966f.firebaseio.com",
+    "project_id": "buslook-5966f",
+    "storage_bucket": "buslook-5966f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522965925940:android:67b4ec917eee0f84",
+        "android_client_info": {
+          "package_name": "com.himanshu.BusLook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522965925940-cfc2alj6p3tjr2811ij364o6pssqjndq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "522965925940-cfc2alj6p3tjr2811ij364o6pssqjndq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo70kWLBfk-TqF3wDmvpWR7wNh_4p9Syk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

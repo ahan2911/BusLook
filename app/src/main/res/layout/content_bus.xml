@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityClasses.BusActivity"
+    tools:showIn="@layout/activity_bus">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="26sp"
+        android:layout_gravity="center_horizontal"
+        app:fontFamily="@font/aref_ruqaa" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Number : "
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/journeyBusNumber"
+        app:fontFamily="@font/aref_ruqaa" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engine Number : "
+        android:textSize="16sp"
+        android:id="@+id/journeyEngineNumber"
+        android:layout_gravity="center_horizontal"
+        app:fontFamily="@font/aref_ruqaa" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chassis Number : "
+        android:textSize="16sp"
+        android:id="@+id/journeyChassisNumber"
+        android:layout_gravity="center_horizontal"
+        app:fontFamily="@font/aref_ruqaa" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="26dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:orientation="vertical">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/busNumberSpinner"
+        android:popupTheme="@style/hello"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:layout_marginBottom="8dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="From"
+            android:inputType="none"
+            android:editable="false"
+            android:id="@+id/fromJourney"/>
+        </android.support.design.widget.TextInputLayout>
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/swap"
+            android:onClick="swapStation"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="To"
+                android:editable="false"
+                android:inputType="none"
+                android:id="@+id/toJourney"/>
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Driver Name"
+            android:inputType="textPersonName"
+            android:id="@+id/driverName"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Conductor Name"
+            android:inputType="textPersonName"
+            android:id="@+id/conductorName"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:id="@+id/journeyMobile"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Journey"
+        android:id="@+id/journeyButton"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
